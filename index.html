@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 TransPlesiran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <img class="logo" alt="30tp-logo" src="./asset/logo30tp.png">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#message-us">Message Us</a>
+        </div>
+    </header>
+
+    <div class="banner-wrapper">
+        <div class="banner" id="banner">
+            <img src="./asset/bg30tp1.jpg" alt="Banner Image 1">
+            <img src="./asset/bg30tp2.jpg" alt="Banner Image 2">
+            <img src="./asset/bg30tp3.jpg" alt="Banner Image 3">
+            <img src="./asset/bg30tp4.jpg" alt="Banner Image 4">
+            <img src="./asset/bg30tp5.jpg" alt="Banner Image 5">
+        </div>
+        <div class="text-container">
+            <h2>Hallo <span id="name"></span>, Welcome to Our Website</h2>
+            <p>Discover the best transportation services with us.</p>
+        </div>
+    </div>
+
+    <div id="home" class="container home-layout">
+        <h2>30 TransPlesiran</h2>
+        <p>Here you'll find the latest updates and news about our company.</p>
+    </div>
+
+    <div id="profile" class="container profile-layout">
+        <h2>Company Profile</h2>
+        <p>30 TransPlesiran was established in 2012, we are from Blora, Central Java and we are a transportation company that serves passengers to many destinations in Java, Bali, and Sumatra Islands. 30 Transplesiran services include overnight buses, charter buses, logistics, and holiday packages. Transportation is crucial as it supports the country's development. Therefore, as a leading bus company, we strive to provide the best transportation that is safe, compliant, reliable, and, of course, at the best prices.</p>
+        <h2>Our Facility</h2>
+        <div class="facility-grid">
+            <div class="facility-box">
+                <img src="./asset/fc1.jpg" alt="Facility Image 1">
+                <p>Comfortable seating with ample legroom.</p>
+            </div>
+            <div class="facility-box">
+                <img src="./asset/fc2.jpg" alt="Facility Image 2">
+                <p>Entertainment music, video, karaoke in every journey.</p>
+            </div>
+            <div class="facility-box">
+                <img src="./asset/fc3.jpg" alt="Facility Image 3">
+                <p>Comfortable steering room and experienced crew.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-us" class="container message-layout">
+        <h2>Message Us</h2>
+        <section class="message-us-section">
+            <section class="form-container">
+                <form id="formulir">
+                    <div class="form-group">
+                        <label for="nama" class="">Nama :</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl_lahir" class="">Tanggal Lahir :</label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <input type="radio" id="lakilaki" name="jeniskelamin" value="Laki-laki" required>
+                        <label for="lakilaki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jeniskelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="submit">Kirim</button>
+                </form>
+            </section>
+
+            <section class="result-container">
+                <div class="form-result">
+                <textarea id="result" rows="15" cols="20" readonly></textarea>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy;2024 Revo U Mini Project. designed by <span>Endry Listianto Miran</span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
